@@ -43,17 +43,6 @@ public class SwerveSubsystem extends SubsystemBase {
             new NEOSwerveModule(3, Constants.ModuleConstants.BackRightModule.constants)
         };
 
-        /* Uncommet this block and comment the block above to use the FXSwerveModule class instead of the NEOSwerveModule class
-
-        FXSwerveModule[] swerveModules = new FXSwerveModule[] {
-            new FXSwerveModule(0, Constants.ModuleConstants.FrontLeftModule.constants),
-            new FXSwerveModule(1, Constants.ModuleConstants.FrontRightModule.constants),
-            new FXSwerveModule(2, Constants.ModuleConstants.BackLeftModule.constants),
-            new FXSwerveModule(3, Constants.ModuleConstants.BackRightModule.constants)
-        };
-
-        */
-
         driveKinematics = Constants.SwerveConstants.SwerveKinematics;
         swerveOdometry = new SwerveDriveOdometry(driveKinematics, getYawRotation2d(), getSwerveModulePositions());
         field = new Field2d();

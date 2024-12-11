@@ -86,7 +86,7 @@ public class Constants {
 
     public static class SwerveConstants {
         /* Motor Hardware being use to use the right code */
-        public static enum MotorHardware { NEO, TalonFX }
+        public static enum MotorHardware { NEO }
         public static MotorHardware SwerveHardware = MotorHardware.NEO; // Change this to the motor hardware you are using
         public static SwerveModuleGearing ModuleGearing = SwerveModuleGearing.MK4I_L1; // Change this to the module gearing you are using
         public static ModuleConfiguration SwerveModule = ModuleConfiguration.SwerveDriveSpecialities.MK4I.NEO(ModuleGearing.getDriveReduction()); // Change this to the motor configuration you are using
@@ -187,64 +187,6 @@ public class Constants {
                     }
 
                     return name + "Button";
-                }
-            }
-        }
-
-        public final static class PS5Controller {
-            public enum Button {
-                kSquare(1),
-                kCross(2),
-                kCircle(3),
-                kTriangle(4),
-                kL1(5),
-                kR1(6),
-                kL2(7),
-                kR2(8),
-                kCreate(9),
-                kOptions(10),
-                kL3(11),
-                kR3(12),
-                kPS(13),
-                kTouchpad(14);
-
-                public final int value;
-
-                Button(int index) {
-                    this.value = index;
-                }
-
-                public String toString() {
-                    var name = this.name().substring(1); // Remove leading `k`
-                    if (this == kTouchpad) {
-                        return name;
-                    }
-
-                    return name + "Button";
-                }
-            }
-
-            public enum Axis {
-                kLeftX(0),
-                kLeftY(1),
-                kRightX(2),
-                kRightY(5),
-                kL2(3),
-                kR2(4);
-
-                public final int value;
-
-                Axis(int index) {
-                    value = index;
-                }
-
-                public String toString() {
-                    var name = this.name().substring(1); // Remove leading `k`
-                    if (name.endsWith("2")) {
-                        return name + "Axis";
-                    }
-
-                    return name;
                 }
             }
         }
