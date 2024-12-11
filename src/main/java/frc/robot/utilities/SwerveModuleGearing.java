@@ -14,9 +14,9 @@ public enum SwerveModuleGearing {
     MK4_L2(GearRatio.MK4_L2, false, GearRatio.MK4_STEERING, false),
     MK4_L3(GearRatio.MK4_L3, false, GearRatio.MK4_STEERING, false),
     MK4_L4(GearRatio.MK4_L4, false, GearRatio.MK4_STEERING, false),
-    MK4I_L1(GearRatio.MK4I_L1, false, GearRatio.MK4I_STEERING, true),
-    MK4I_L2(GearRatio.MK4I_L2, false, GearRatio.MK4I_STEERING, true),
-    MK4I_L3(GearRatio.MK4I_L3, false, GearRatio.MK4I_STEERING, true);
+    MK4N_L1(GearRatio.MK4N_L1, false, GearRatio.MK4N_STEERING, true),
+    MK4N_L2(GearRatio.MK4N_L2, false, GearRatio.MK4N_STEERING, true),
+    MK4N_L3(GearRatio.MK4N_L3, false, GearRatio.MK4N_STEERING, true);
 
     private double driveReduction;
     private boolean driveInverted;
@@ -85,13 +85,13 @@ public enum SwerveModuleGearing {
         public static final double MK4_L3 = (50.0 / 14.0) * (16.0 / 28.0) * (45.0 / 15.0);
         public static final double MK4_L4 = (48.0 / 16.0) * (16.0 / 28.0) * (45.0 / 15.0);
 
-        public static final double MK4I_L1 = (50.0 / 16.0) * (19.0 / 25.0) * (45.0 / 15.0);
-        public static final double MK4I_L2 = (50.0 / 14.0) * (17.0 / 27.0) * (45.0 / 15.0);
-        public static final double MK4I_L3 = (50.0 / 14.0) * (16.0 / 28.0) * (45.0 / 15.0);
+        public static final double MK4N_L1 = (50.0 / 16.0) * (19.0 / 25.0) * (45.0 / 15.0);
+        public static final double MK4N_L2 = (50.0 / 16.0) * (17.0 / 27.0) * (45.0 / 15.0);
+        public static final double MK4N_L3 = (50.0 / 16.0) * (16.0 / 28.0) * (45.0 / 15.0);
 
         public static final double MK3_STEERING = (32.0 / 15.0) * (60.0 / 10.0);
         public static final double MK4_STEERING = (32.0 / 15.0) * (60.0 / 10.0);
-        public static final double MK4I_STEERING = (50.0 / 14.0) * (60.0 / 10.0);
+        public static final double MK4N_STEERING = (50.0 / 14.0) * (60.0 / 10.0);
 
     }
 }

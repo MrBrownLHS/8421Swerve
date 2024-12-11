@@ -88,8 +88,8 @@ public class Constants {
         /* Motor Hardware being use to use the right code */
         public static enum MotorHardware { NEO }
         public static MotorHardware SwerveHardware = MotorHardware.NEO; // Change this to the motor hardware you are using
-        public static SwerveModuleGearing ModuleGearing = SwerveModuleGearing.MK4I_L1; // Change this to the module gearing you are using
-        public static ModuleConfiguration SwerveModule = ModuleConfiguration.SwerveDriveSpecialities.MK4I.NEO(ModuleGearing.getDriveReduction()); // Change this to the motor configuration you are using
+        public static SwerveModuleGearing ModuleGearing = SwerveModuleGearing.MK4N_L1; // Change this to the module gearing you are using
+        public static ModuleConfiguration SwerveModule = ModuleConfiguration.SwerveDriveSpecialities.MK4N.NEO(ModuleGearing.getDriveReduction()); // Change this to the motor configuration you are using
 
         /* Information of Drivetrain to perform kinematics */
         public static final double TrackWidth = Units.inchesToMeters(28); // Distance from center of the right wheels to center on the left wheels

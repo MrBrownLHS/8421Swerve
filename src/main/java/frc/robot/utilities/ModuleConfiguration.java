@@ -24,23 +24,23 @@ public class ModuleConfiguration {
     }
 
     public static final class SwerveDriveSpecialities {
-        public static final class MK4I {
+        public static final class MK4N {
             
             public static final ModuleConfiguration NEO(double driveGearRatio) {
                 double wheelDiameter = Units.inchesToMeters(4.0);
-                double angleGearRatio = SwerveModuleGearing.MK4I_L1.getSteerReduction();
+                double angleGearRatio = SwerveModuleGearing.MK4N_L1.getSteerReduction();
 
-                boolean driveMotorInvert = SwerveModuleGearing.MK4I_L1.isDriveInverted();
-                boolean angleMotorInvert = SwerveModuleGearing.MK4I_L1.isSteerInverted();
+                boolean driveMotorInvert = SwerveModuleGearing.MK4N_L1.isDriveInverted();
+                boolean angleMotorInvert = SwerveModuleGearing.MK4N_L1.isSteerInverted();
                 boolean cancoderInvert = false;
 
                 return new ModuleConfiguration(wheelDiameter, angleGearRatio, driveGearRatio, driveMotorInvert, angleMotorInvert, cancoderInvert);
             }
 
             public static final class RatioOptions {
-                public static final double L1 = SwerveModuleGearing.MK4I_L1.getDriveReduction();
-                public static final double L2 = SwerveModuleGearing.MK4I_L2.getDriveReduction();
-                public static final double L3 = SwerveModuleGearing.MK4I_L3.getDriveReduction();
+                public static final double L1 = SwerveModuleGearing.MK4N_L1.getDriveReduction();
+                public static final double L2 = SwerveModuleGearing.MK4N_L2.getDriveReduction();
+                public static final double L3 = SwerveModuleGearing.MK4N_L3.getDriveReduction();
             }
         }
     }
