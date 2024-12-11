@@ -76,6 +76,7 @@ public enum SwerveModuleGearing {
      */
 
     private class GearRatio {
+    
         public static final double MK3_STANDARD = (50.0 / 14.0) * (16.0 / 28.0) * (60.0 / 15.0);
         public static final double MK3_FAST = (48.0 / 16.0) * (16.0 / 28.0) * (60.0 / 15.0);
 
@@ -84,12 +85,13 @@ public enum SwerveModuleGearing {
         public static final double MK4_L3 = (50.0 / 14.0) * (16.0 / 28.0) * (45.0 / 15.0);
         public static final double MK4_L4 = (48.0 / 16.0) * (16.0 / 28.0) * (45.0 / 15.0);
 
-        public static final double MK4I_L1 = (50.0 / 14.0) * (19.0 / 25.0) * (45.0 / 15.0);
+        public static final double MK4I_L1 = (50.0 / 16.0) * (19.0 / 25.0) * (45.0 / 15.0);
         public static final double MK4I_L2 = (50.0 / 14.0) * (17.0 / 27.0) * (45.0 / 15.0);
         public static final double MK4I_L3 = (50.0 / 14.0) * (16.0 / 28.0) * (45.0 / 15.0);
 
         public static final double MK3_STEERING = (32.0 / 15.0) * (60.0 / 10.0);
         public static final double MK4_STEERING = (32.0 / 15.0) * (60.0 / 10.0);
         public static final double MK4I_STEERING = (50.0 / 14.0) * (60.0 / 10.0);
+
     }
 }
